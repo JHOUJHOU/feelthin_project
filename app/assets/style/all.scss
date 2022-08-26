@@ -1,6 +1,11 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "./helpers/utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
-@import './layout/index.scss'
+@import './helpers/reset.scss';
+@import './layout/base.scss';
+@import './layout/layout.scss';
+@import './helpers/background.scss';

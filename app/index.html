@@ -1,58 +1,44 @@
 ---
-title: Boostrap Index
+title: 感瘦
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
+<section>
+  <div class="container-lg py-21">
+    <h1 class="fs-96 lh-96 text-secondary mb-md-21 mb-9">
+      Diet
+      <br>Fitness
+      <br>Feeling
+    </h1>
+    <h2 class="fs-48 lh-64 text-secondary mb-4">你的煩惱，我們感同身受</h2>
+    <p class="fs-4 lh-lg text-success mb-9">感瘦提供你減肥相關知識，讓我們從了解自身熱量開始，朝向理想的健康生活。</p>
+    <button class="btn btn-outline-secondary py-4 px-4 fs-4 lh-sm rounded-8" type="button">瘦身好文</button>
+    <button class="btn btn-secondary  py-4 px-4 fs-4 lh-sm text-white ms-md-9 rounded-8" type="button">TDEE計算</button>
   </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
+</section>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+<section>
+  <div class="container-lg text-center py-21">
+    <h2 class="fs-48 lh-56 text-primary mb-4">關於我們</h2>
+    <img class="mb-4" src="./assets/images/divider.png" alt="divider">
+    <p class="fs-2 lh-60">因上班長期久坐、上班已經很累下班根本不想動只想躺，又加上沒有運動習慣、飲食上沒有控制的人等原因體重已失控的狀況，所以感瘦想提供有同樣情況的人一個方向，能協助解決肥胖問題。</p>
+  </div>
+</section>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<section>
+  <div class="container-lg py-lg-21">
+    <div class="row">
+      <div class="col-lg-6 col">
+        <a class="tdeeImg text-hidden" href="#">tdee</a>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="col-lg-6 col">
+        <div class="d-flex flex-column ju8i">
+          <p>從了解自己所需每日熱量開始，你要先知道甚麼是TDEE</p>
+          <button class="btn btn-secondary  py-4 px-4 fs-4 lh-sm text-white ms-md-9 rounded-8" type="button">TDEE計算</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
