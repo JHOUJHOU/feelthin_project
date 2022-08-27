@@ -5,107 +5,309 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
+    <title>感瘦</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+    <header class="py-4">
+      <div class="container-lg">
+        <nav class="navbar sticky-md-top navbar-expand-lg navbar-light d-flex justify-content-between align-items-center">
+          <a class="navbar-brand fs-4 lh-36 text-light" href="index.html">
+            感瘦
+          </a>
+          <ul class="d-flex justify-content-between align-items-center d-lg-none d-block">
+            <li class="nav-item me-md-16">
+              <a class="nav-link" href="collect.html">
+                <span class="material-icons w-24 h-24 text-primary">
+                  favorite
+                </span>
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <li class="nav-item me-md-16">
+              <a class="nav-link" href="cart.html">
+                <span class="material-icons w-24 h-24 text-primary">
+                  shopping_cart
+                </span>
+              </a>
+            </li>
+            <li>
+              <button class="navbar-toggler d-lg-none border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="material-icons text-primary">
+                  menu
+                </span>
+            </button>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link fs-6 lh-sm text-success" aria-current="page" href="tdee.html">TDEE計算
+                </a>
+              </li>
+              <li class="nav-item ms-md-18">
+                <a class="nav-link fs-6 lh-sm text-success" href="article.html">瘦身好文</a>
+              </li>
+              <li class="nav-item ms-md-18">
+                <a class="nav-link fs-6 lh-sm text-success" href="cookbook.html">瘦身食譜</a>
+              </li>
+              <li class="nav-item ms-md-18">
+                <a class="nav-link fs-6 lh-sm text-success" href="lunchbox.html">瘦身餐盒</a>
+              </li>
+              <li class="nav-item ms-md-18">
+                <a class="nav-link fs-6 lh-sm text-success" href="login.html">會員登入</a>
+              </li>
+              <li class="nav-item d-md-block d-none ms-md-17">
+                <a class="nav-link" href="collect.html">
+                  <span class="material-icons w-24 h-24 text-primary">
+                    favorite
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item d-md-block d-none ms-md-16">
+                <a class="nav-link" href="cart.html">
+                  <span class="material-icons w-24 h-24 text-primary">
+                    shopping_cart
+                  </span>
+                </a>
+              </li> 
+            </ul>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </header>
 
     
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
+<section>
+  <div class="container-lg py-21">
+    <h1 class="fs-96 lh-96 text-secondary mb-md-21 mb-9">
+      Diet
+      <br>Fitness
+      <br>Feeling
+    </h1>
+    <h2 class="fs-48 lh-64 text-secondary mb-4">你的煩惱，我們感同身受</h2>
+    <p class="fs-4 lh-lg text-success mb-9">感瘦提供你減肥相關知識，讓我們從了解自身熱量開始，朝向理想的健康生活。</p>
+    <button class="btn btn-outline-secondary py-4 px-4 fs-4 lh-sm rounded-8" type="button">瘦身好文</button>
+    <button class="btn btn-secondary  py-4 px-4 fs-4 lh-sm text-white ms-md-9 rounded-8" type="button">TDEE計算</button>
   </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
+</section>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+<section>
+  <div class="container-lg text-center py-21">
+    <h2 class="fs-48 lh-56 text-primary mb-4">關於我們</h2>
+    <img class="mb-4" src="./assets/images/divider.png" alt="divider">
+    <p class="fs-2 lh-60">因上班長期久坐、上班已經很累下班根本不想動只想躺，又加上沒有運動習慣、飲食上沒有控制的人等原因體重已失控的狀況，所以感瘦想提供有同樣情況的人一個方向，能協助解決肥胖問題。</p>
+  </div>
+</section>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<section>
+  <div class="container-lg py-md-21 mb-29">
+    <div class="row mb-18">
+      <div class="col-lg-6 col-12">
+        <div class="position-relative mb-md-0 mb-7">
+          <div class="box-1">
+            <div class="tdeeImg text-hidden">tdeeImg</div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        ...
+      <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
+        <p class="fs-2 lh-60 mb-md-7 mb-10">從了解自己所需每日熱量開始，你<br>要先知道甚麼是TDEE</p>
+          <button class="btn btn-secondary  py-6 px-16 fs-4 lh-56 text-white rounded-8" type="button">TDEE計算</button>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+    <div class="row d-flex flex-md-row flex-column-reverse">
+      <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center mb-md-0 mb-7 ">
+        <p class="fs-2 lh-60 mb-md-7 mb-10">多樣豐富各種文章，讓您找到您<br>適合的減重方法及所有的知識。</p>
+        <button class="btn btn-secondary  py-6 px-16 fs-4 lh-56 text-white rounded-8" type="button">瘦身好文</button>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="position-relative">
+          <div class="box-1">
+            <div class="articleImg text-hidden">tdeeImg</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
+<section>
+  <div class="py-21 recipe px-md-0 px-6 position-relative">
+    <div class="container-lg">
+      <div class="row bg-white pt-11 pb-13 d-flex flex-md-row flex-column-reverse">
+        <div class="col-md-4 col-12 d-flex flex-column justify-content-center align-items-center mt-lg-0 mt-21">
+          <p class="fs-2 lh-60 mb-10 text-center">各種瘦身食譜
+            <br>讓你在瘦身路上不孤單</p>
+          <button class="btn btn-secondary  py-6 px-16 fs-4 lh-56 text-white rounded-8" type="button">瘦身食譜</button>
+        </div>
+        <div class="col-md-8 col-12">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper mb-9">
+              <div class="swiper-slide">
+                <div class="avocadoSaladImg text-hidden mb-9">saladImg</div>
+                <div>
+                  <h4 class="fs-4 lh-36 mb-4 text-center">酪梨蔬食沙拉</h4>
+                  <p class="fs-5 lh-lg">新鮮酪梨搭配多種水果蔬食蕃茄調味，加入莫札瑞拉起司增加蛋白質含量，再撒點薄荷、胡椒等，清爽好吃無負擔。</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="porkSaladImg text-hidden mb-9">saladImg</div>
+                <div>
+                  <h4 class="fs-4 lh-36 mb-4 text-center">豬肉蔬食沙拉</h4>
+                  <p class="fs-5 lh-lg">豬肉經過烤箱烘烤後，肉汁飽滿爆汁，搭配多種水果蔬食，在補充膳食纖維時也能吃到肉補充蛋白質，讓吃起來開心又滿足。</p>
+                </div>
+              </div>
+              <div class="swiper-slide mb-6">
+                <div class="kimchiSaladImg text-hidden mb-9">saladImg</div>
+                <div>
+                  <h4 class="fs-4 lh-36 mb-4 text-center">泡菜蔬食沙拉</h4>
+                  <p class="fs-5 lh-lg">泡菜內有大蒜和辣椒，偶爾吃能促進新陳代謝和纖維質，吃蔬菜同時也能吃到澱粉，讓吃起來不罪惡。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer class="footer">
-      footer
+<section>
+  <div class="container-lg py-21">
+    <h2 class="fs-1 lh-60 text-primary mb-4 text-md-start text-center">
+      沒有時間自己料理，提供多樣健康的瘦身餐盒
+    </h2>
+    <p class="fs-1 lh-60 text-primary mb-4 text-md-end text-center">好吃又美味，開心的瘦下來</p>
+    <div class="text-center mb-9">
+      <img src="./assets/images/divider.png" alt="divider">
+    </div>
+    <div class="row mb-18">
+      <div class="col-md-4 col-12 mb-md-0 mb-6">
+        <div class="card"">
+          <div class="chickenbox text-hidden">chickenbox</div>
+          <div class="card-body px-0 py-0">
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <h4 class="card-title fs-4 lh-36">雞肉蔬菜輕食</h4>
+                <p class="fs-4 lh-36 text-primary">NT 1000</p>
+              </div>
+              <p class="card-text fs-5 lh-lg">多種蔬菜水果，搭配經過舒肥過的雞胸肉，豐富膳食纖維並補充足夠蛋白質及澱粉，好吃營養無負擔。</p>
+            </div>
+            <button class="btn btn-secondary text-white w-100 rounded-8  fs-4 lh-sm py-4" type="button">加入購物車</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 mb-md-0 mb-6">
+        <div class="card"">
+          <div class="kimchibox text-hidden">kimchibox</div>
+          <div class="card-body px-0 py-0">
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <h4 class="card-title fs-4 lh-36">泡菜蔬食沙拉</h4>
+                <p class="fs-4 lh-36 text-primary">NT 1000</p>
+              </div>
+              <p class="card-text fs-5 lh-lg">泡菜內有大蒜和辣椒，偶爾吃能促進新陳代謝和纖維質，吃蔬菜同時也能吃到澱粉，讓吃起來不罪惡。</p>
+            </div>
+            <button class="btn btn-secondary text-white w-100 rounded-8  fs-4 lh-sm py-4" type="button">加入購物車</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12">
+        <div class="card"">
+          <div class="porkbox text-hidden">porkbox</div>
+          <div class="card-body px-0 py-0">
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <h4 class="card-title fs-4 lh-36">豬肉蔬食沙拉</h4>
+                <p class="fs-4 lh-36 text-primary">NT 1000</p>
+              </div>
+              <p class="card-text fs-5 lh-lg">豬肉經過烤箱烘烤後，肉汁飽滿爆汁，搭配多種水果蔬食，在補充膳食纖維時也能吃到肉補充蛋白質，讓吃起來開心又滿足。</p>
+            </div>
+            <button class="btn btn-secondary text-white w-100 rounded-8  fs-4 lh-sm py-4" type="button">加入購物車</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-outline-secondary rounded-8 fs-36 lh-sm py-6 px-16" type="button">查看所有商品</button>
+    </div>
+  </div>
+</section>
+
+    <footer class="bg-info">
+      <div class="container-lg">
+        <ul class="d-flex flex-lg-row justify-content-lg-between flex-column align-items-center">
+          <li>
+            <ul class="d-flex flex-column justify-content-between  align-items-center py-24">
+              <li class="mb-6">
+                <a class="fs-6 lh-sm text-primary" href="tdee.html">
+                  TDEE計算
+                </a>
+              </li>
+              <li class="mb-6">
+                <a class="fs-6 lh-sm text-primary" href="article.html">
+                  瘦身好文
+                </a>
+              </li>
+              <li class="mb-6">
+                <a class="fs-6 lh-sm text-primary" href="cookbook.html">
+                  瘦身食譜
+                </a>
+              </li>
+              <li class="mb-6">
+                <a class="fs-6 lh-sm text-primary" href="lunchbox.html">
+                  瘦身餐盒
+                </a>
+              </li>
+              <li>
+                <a class="fs-6 lh-sm text-primary" href="Information.html">
+                  付款及運送資訊
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="d-flex flex-column align-items-center my-lg-0 my-3">
+            <img class="d-md-none d-block" src="./assets/images/divider.png" alt="divider">
+            <a class="navbar-brand fs-4 lh-36 text-primary py-6 my-3" href="index.html">
+              感瘦
+            </a>
+            <img class="d-md-none d-block" src="./assets/images/divider.png" alt="divider">
+          </li>
+          <li class="py-13 d-flex flex-column align-items-center">
+            <p class="fs-6 lh-sm text-primary mb-6">會員登入</p>
+            <ul class="mb-6 d-flex">
+              <li>
+                <a href="https://zh-tw.facebook.com/">
+                  <img class="w-16 h-24" src="./assets/images/meta 1.png" alt="meta">
+                </a>
+              </li>
+              <li class="mx-6">
+                <a href="https://www.instagram.com/">
+                  <img class="w-24 h-24" src="./assets/images/instagram 1.png" alt="instagram">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/">
+                  <img class="w-24 h-24" src="./assets/images/github 1.png" alt="github">
+                </a>
+              </li>
+            </ul>
+            <p class="fs-6 lh-sm text-primary mb-6">電話：0912345678</p>
+            <p class="fs-6 lh-sm text-primary">信箱：feeltothin@gmail.com</p>
+          </li>
+        </ul>
+      </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

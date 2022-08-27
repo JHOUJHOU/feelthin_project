@@ -1,6 +1,18 @@
 "use strict";
 
-$(function () {
-  console.log('Hello Bootstrap5');
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    }
+  }
 });
 //# sourceMappingURL=all.js.map
