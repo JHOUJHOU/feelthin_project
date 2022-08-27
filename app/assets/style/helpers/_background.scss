@@ -1,7 +1,51 @@
+.box {
+  border: solid 2px $white;
+  height: 527px;
+  width: 527px;
+  -webkit-clip-path: circle(45.0% at 50% 50%);
+  clip-path: circle(45.0% at 50% 50%);
+  @media (min-width: 768px) {
+    height: 628px;
+    width: 628px;
+    -webkit-clip-path: circle(48.0% at 50% 50%);
+    clip-path: circle(48.0% at 50% 50%);
+  }
+}
 .tdeeImg {
-  background-image: url("/app/assets/images/tdeeImg.jpg") no-repeat;
-  background-size: contain;
-  background-position: center center;
-  height: 300px;
-  width: 300px;
+    background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/tdeeImg.jpg?raw=true") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 527px;
+    width: 527px;
+    position:absolute; 
+    top:0; 
+    left:0;
+    z-index: -1;
+  &:hover {
+    transform:scale(1.2,1.2);
+    transition-duration: 1.5s;
+  }
+  @media (min-width: 768px) {
+    height: 628px;
+    width: 628px;
+  }
+}
+.articleImg {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/articleimg.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 527px;
+  width: 527px;
+  position:absolute; 
+  top:0; 
+  left:0;
+  z-index: -1;
+&:hover {
+  transform:scale(1.2,1.2);
+  transition-duration: 0.5s;
+}
+@media (min-width: 768px) {
+  height: 628px;
+  width: 628px;
+}
 }
