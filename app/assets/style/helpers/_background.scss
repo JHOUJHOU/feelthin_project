@@ -61,36 +61,38 @@
   background-size: cover;
   background-position: right;
   height: 100%;
+  z-index: -2;
 }
 .avocadoSaladImg {
   background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/AvocadoSalad.jpg?raw=true") no-repeat;
   background-size: cover;
   background-position: center center;
   height: 360px;
-  width: 100%;
+  width: 360px;
+  border-radius: 50%;
 }
 .porkSaladImg {
   background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/porksalad.jpg?raw=true") no-repeat;
   background-size: cover;
   background-position: center center;
   height: 360px;
-  width: 100%;
+  width: 360px;
+  border-radius: 50%;;
 }
 .kimchiSaladImg {
   background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/KimchiSalad.jpg?raw=true") no-repeat;
   background-size: cover;
   background-position: center center ;
   height: 360px;
-  width: 100%;
+  width: 360px;
+  border-radius: 50%;;
 }
-.recipe-text::before {
-  content: 'Recipe';
-  color: #6AC1AC;
-  font-size: 200px;
+.recipe::after {
+  content: url("https://raw.githubusercontent.com/JHOUJHOU/feelthin_project/53b5df149481a670dfbf471b1e6264fe91d648bc/app/assets/images/Recipe.svg");
+  z-index: -1;
   position:absolute;
-  z-index: 1;
-  top: -75px;
+  top: -230px;
   right: 0px;
   bottom: 0px;
-  left: 85px;
+  left: 120px;
 }
