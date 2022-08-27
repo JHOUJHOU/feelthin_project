@@ -1,4 +1,4 @@
-.box {
+.box-1 {
   border: solid 2px $white;
   height: 527px;
   width: 527px;
@@ -40,12 +40,57 @@
   top:0; 
   left:0;
   z-index: -1;
-&:hover {
-  transform:scale(1.2,1.2);
-  transition-duration: 0.5s;
+  &:hover {
+    transform:scale(1.2,1.2);
+    transition-duration: 0.5s;
+  }
+  @media (min-width: 768px) {
+    height: 628px;
+    width: 628px;
+  }
 }
-@media (min-width: 768px) {
-  height: 628px;
-  width: 628px;
+.box-2 {
+  border: solid 2px $white;
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: circle(40% at 50% 50%);
+  clip-path: circle(40% at 50% 50%);
 }
+.recipe {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/recipe.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 100%;
+}
+.avocadoSaladImg {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/AvocadoSalad.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 360px;
+  width: 100%;
+}
+.porkSaladImg {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/porksalad.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 360px;
+  width: 100%;
+}
+.kimchiSaladImg {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/KimchiSalad.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: center center ;
+  height: 360px;
+  width: 100%;
+}
+.recipe-text::before {
+  content: 'Recipe';
+  color: #6AC1AC;
+  font-size: 200px;
+  position:absolute;
+  z-index: 1;
+  top: -75px;
+  right: 0px;
+  bottom: 0px;
+  left: 85px;
 }
