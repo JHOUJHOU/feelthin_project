@@ -61,7 +61,7 @@
   background-size: cover;
   background-position: right;
   height: 100%;
-  z-index: -2;
+  z-index: 3;
 }
 .avocadoSaladImg {
   background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/AvocadoSalad.jpg?raw=true") no-repeat;
@@ -87,12 +87,42 @@
   width: 360px;
   border-radius: 50%;;
 }
-.recipe::after {
-  content: url("https://raw.githubusercontent.com/JHOUJHOU/feelthin_project/53b5df149481a670dfbf471b1e6264fe91d648bc/app/assets/images/Recipe.svg");
+.recipe::before {
+  content: url("https://raw.githubusercontent.com/JHOUJHOU/feelthin_project/b348507ccc694ed02322cf2e87af2882476e7b9f/app/assets/images/Recipe-sm.svg");
   z-index: -1;
   position:absolute;
-  top: -230px;
+  top: -90px;
   right: 0px;
   bottom: 0px;
-  left: 120px;
+  left: 20px;
+  @media (min-width: 768px) {
+    content: url("https://raw.githubusercontent.com/JHOUJHOU/feelthin_project/53b5df149481a670dfbf471b1e6264fe91d648bc/app/assets/images/Recipe.svg");
+    z-index: -1;
+    position:absolute;
+    top: -230px;
+    right: 0px;
+    bottom: 0px;
+    left: 120px;
+  }
+}
+.chickenbox {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/tdeeImg.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: center center ;
+  width: 100%;
+  height: 400px;
+}
+.kimchibox {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/KimchiSalad.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 400px;
+}
+.porkbox {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/porksalad.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: center center ;
+  width: 100%;
+  height: 400px;
 }
