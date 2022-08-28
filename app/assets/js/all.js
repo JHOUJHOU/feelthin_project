@@ -13,3 +13,10 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+
+var swiper = new Swiper(".mySwiper-banner", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  freeMode: true,
+});
