@@ -8654,8 +8654,16 @@ fieldset:disabled .btn {
   top: 0 !important;
 }
 
+.top-25 {
+  top: 25% !important;
+}
+
 .top-50 {
   top: 50% !important;
+}
+
+.top-75 {
+  top: 75% !important;
 }
 
 .top-100 {
@@ -8666,8 +8674,16 @@ fieldset:disabled .btn {
   bottom: 0 !important;
 }
 
+.bottom-25 {
+  bottom: 25% !important;
+}
+
 .bottom-50 {
   bottom: 50% !important;
+}
+
+.bottom-75 {
+  bottom: 75% !important;
 }
 
 .bottom-100 {
@@ -8678,8 +8694,16 @@ fieldset:disabled .btn {
   left: 0 !important;
 }
 
+.start-25 {
+  left: 25% !important;
+}
+
 .start-50 {
   left: 50% !important;
+}
+
+.start-75 {
+  left: 75% !important;
 }
 
 .start-100 {
@@ -8690,8 +8714,16 @@ fieldset:disabled .btn {
   right: 0 !important;
 }
 
+.end-25 {
+  right: 25% !important;
+}
+
 .end-50 {
   right: 50% !important;
+}
+
+.end-75 {
+  right: 75% !important;
 }
 
 .end-100 {
@@ -8844,6 +8876,10 @@ fieldset:disabled .btn {
   width: 24px !important;
 }
 
+.w-48 {
+  width: 48px !important;
+}
+
 .w-400 {
   width: 400px !important;
 }
@@ -8886,6 +8922,10 @@ fieldset:disabled .btn {
 
 .h-24 {
   height: 24px !important;
+}
+
+.h-48 {
+  height: 48px !important;
 }
 
 .h-400 {
@@ -20445,6 +20485,7 @@ body {
   background-position: right;
   height: 100%;
   z-index: 3;
+  background-attachment: fixed;
 }
 
 .avocadoSaladImg {
@@ -20456,6 +20497,11 @@ body {
   border-radius: 50%;
 }
 
+.avocadoSaladImg:hover {
+  -webkit-box-shadow: 5px 5px 7px #6C6C6C;
+          box-shadow: 5px 5px 7px #6C6C6C;
+}
+
 .porkSaladImg {
   background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/porksalad.jpg?raw=true") no-repeat;
   background-size: cover;
@@ -20465,6 +20511,11 @@ body {
   border-radius: 50%;
 }
 
+.porkSaladImg:hover {
+  -webkit-box-shadow: 5px 5px 7px #6C6C6C;
+          box-shadow: 5px 5px 7px #6C6C6C;
+}
+
 .kimchiSaladImg {
   background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/KimchiSalad.jpg?raw=true") no-repeat;
   background-size: cover;
@@ -20472,6 +20523,11 @@ body {
   height: 360px;
   width: 360px;
   border-radius: 50%;
+}
+
+.kimchiSaladImg:hover {
+  -webkit-box-shadow: 5px 5px 7px #6C6C6C;
+          box-shadow: 5px 5px 7px #6C6C6C;
 }
 
 .recipe::before {
@@ -20518,6 +20574,96 @@ body {
   background-position: center center;
   width: 100%;
   height: 400px;
+}
+
+.sport-first {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/sport1.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 630px;
+  height: 480px;
+}
+
+.sport-sec {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/sport2.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 630px;
+  height: 480px;
+}
+
+.sport-three {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/porksalad.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 630px;
+  height: 480px;
+}
+
+.move {
+  width: 700px;
+  height: 490px;
+  position: relative;
+}
+
+.move a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation: silder 15s linear infinite;
+  animation: silder 15s linear infinite;
+}
+
+.move a img {
+  max-width: 100%;
+}
+
+@-webkit-keyframes silder {
+  3% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  27% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  30% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+@keyframes silder {
+  3% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  27% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  30% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+.move a:nth-child(3) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.move a:nth-child(2) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.move a:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 /*# sourceMappingURL=all.css.map */
