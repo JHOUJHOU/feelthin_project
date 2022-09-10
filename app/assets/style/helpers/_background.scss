@@ -207,3 +207,10 @@
     display: block;
   }
 }
+.tdeeBanner {
+  background: url("/app/assets/images/tdeebanner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 100%;
+}
