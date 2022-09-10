@@ -185,3 +185,25 @@
     display: block;
   }
 }
+.registerImg {
+  display: none;
+  @media (min-width: 768px) {
+    background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/registerImg.jpg?raw=true") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    display: block;
+  }
+}
+.resetImg {
+  display: none;
+  @media (min-width: 768px) {
+    background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/resetImg.jpg?raw=true") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    display: block;
+  }
+}
