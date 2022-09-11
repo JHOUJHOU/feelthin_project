@@ -74,15 +74,14 @@
   background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/recipe.jpg?raw=true") no-repeat;
   background-size: cover;
   background-position: center center;
+  position: relative;
   height: 100%;
   max-width: 100%;
   z-index: 0;
   background-attachment:fixed;
 }
 .recipe::after {
-  // content: url("https://raw.githubusercontent.com/JHOUJHOU/feelthin_project/53b5df149481a670dfbf471b1e6264fe91d648bc/app/assets/images/Recipe.svg");
-  content: "Recipe";
-  font-size: 96px;
+  content: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/Recipe-sm.png?raw=true");
   z-index: -1;
   background-size: cover;
   background-position: center center;
@@ -91,8 +90,9 @@
   right: 0px;
   bottom: 0px;
   left: 20px;
-  width: 100%;
+  max-width: 100%;
   @media (min-width: 768px) {
+    content: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/Recipe.png?raw=true");
     top: -230px;
     right: 0px;
     bottom: 0px;
