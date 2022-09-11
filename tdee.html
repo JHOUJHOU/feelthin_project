@@ -84,12 +84,65 @@
       </div>
     </header>
     
+<!-- banner -->
 <section>
-  <div class="tdeeBanner d-flex justify-content-center align-items-center">
+  <div class="tdeeBanner d-flex justify-content-center align-items-center mb-21">
     <div class="container-lg tdeebox d-flex flex-column justify-content-center align-items-center py-13">
         <h1 class="fs-48 lh-64 fw-bolder text-secondary">了解自己每日所需熱量，讓你瘦身更順利</h1>
-        <p class="fs-4 lh-lg fw-normal text-success">使用 BMR / TDEE 計算器算出你的基礎代謝率（BMR）與每日消耗總熱量（TDEE）</p>
-        <p class="fs-4 lh-lg fw-normal text-success">只需要輸入身高、體重、年齡、活動量就能計算。</p>
+        <p class="fs-4 lh-lg fw-normal text-success text-center">使用 BMR / TDEE 計算器算出你的基礎代謝率（BMR）與每日消耗總熱量（TDEE，只需要輸入身高、體重、年齡、活動量就能計算。</p>
+    </div>
+  </div>
+</section>
+<!-- BMR是甚麼 ? TDEE又是甚麼 ? -->
+<section>
+  <div class="container-lg mb-21">
+    <h2 class="fs-48 lh-64 fw-bolder text-secondary mb-4">BMR是甚麼 ? TDEE又是甚麼 ?</h2>
+    <h3 class="fs-2 lh-lg fw-bolder text-success">基礎代謝率 BMR ( Basal Metabolic Rate )</h3>
+    <p class="fs-4 lh-lg fw-normal text-success mb-9">是人一天都不動，身體所需最低的消耗熱量，像是休息、呼吸、新陳代謝、生存等讓身體維持運作，而基礎代謝率占了每日消耗總熱量其中一部分，會影響基礎代謝高或低有很多原因，如性別、年齡、體溫、環境、體重、肌肉量等很多因素。</p>
+    <h3 class="fs-2 lh-lg fw-bolder text-success">每日消耗總熱量 TDEE  ( Total Daily Energy Expenditure )</h3>
+    <p class="fs-4 lh-lg fw-normal text-success mb-9">單純知道基礎代謝率還不夠，因為我們不可能一直不動，在生活中像是走到4樓上班、走路出去買東西、有進行運動等活動量都在消耗熱量，因此就需要 TDEE 來更精準的計算出你每日所需消耗的總熱量，計算時也把很多因素一起加入考量。</p>
+  </div>
+</section>
+<!-- 初步了解 BMR / TDEE 是甚麼後，讓我們一起計算自己的每日所需熱量吧 -->
+<section>
+  <div class="bg-secondary py-13 mb-9">
+    <h2 class="fs-1 lh-64 fw-bolder text-white text-center mb-4">初步了解 BMR / TDEE 是甚麼後，讓我們一起計算自己的每日所需熱量吧</h2>
+  </div>
+</section>
+
+<section>
+  <div class="container-lg mb-21">
+    <div class="row">
+      <div class="col-md-6 col-12 border border-1 border-success rounded-24">
+        <h3 class="fs-2 lh-lg fw-bolder text-success text-center">BMR計算機</h3>
+        <ul class="px-6">
+          <li class="mb-2">
+            <p class="fs-4 lh-base">你的性別</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <button type="button" class="btn btn-outline-secondary py-4 w-50">男性</button>
+              <button type="button" class="btn btn-secondary text-white py-4 w-50  ms-1">女性</button>
+            </div>
+          </li>
+          <li class="mb-2">
+            <label class="fs-4 lh-base fw-normal w-100" for="text">你的身高（公分）</label>
+            <input class="fs-4 lh-60 fw-normal rounded-8 border-1 w-100" type="text" id="text" placeholder="請輸入身高">
+          </li>
+          <li class="mb-2">
+            <label class="fs-4 lh-base fw-normal w-100" for="text">你的體重（公斤）</label>
+            <input class="fs-4 lh-60 fw-normal rounded-8 border-1 w-100" type="text" id="text" placeholder="請輸入體重">
+          </li>
+          <li class="mb-2">
+            <label class="fs-4 lh-base fw-normal w-100" for="text">你的年齡</label>
+            <input class="fs-4 lh-60 fw-normal rounded-8 border-1 w-100" type="text" id="text" placeholder="請輸入年齡">
+          </li>
+          <li class="mb-2">
+            <p class="fs-4 lh-60 fw-normal">基礎代謝率 BMR 結果 : 
+              <span>x,xxx大卡</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-12"></div>
     </div>
   </div>
 </section>
