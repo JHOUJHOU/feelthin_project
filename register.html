@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>感瘦-會員註冊</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="py-4 sticky-top opacity-25 bg-white">
+      <div class="container-lg">
+        <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between align-items-center">
+          <a class="navbar-brand fs-4 lh-36 fw-bolder text-light" href="index.html">
+            感瘦
+          </a>
+          <ul class="d-flex justify-content-between align-items-center d-lg-none d-block">
+            <li class="nav-item me-md-16">
+              <a class="nav-link" href="collect.html">
+                <span class="material-icons w-24 h-24 text-primary">
+                  favorite
+                </span>
+              </a>
+            </li>
+            <li class="nav-item me-md-16">
+              <a class="nav-link" href="cart.html">
+                <span class="material-icons w-24 h-24 text-primary">
+                  shopping_cart
+                </span>
+              </a>
+            </li>
+            <li>
+              <button class="navbar-toggler d-lg-none border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="material-icons text-primary">
+                  menu
+                </span>
+            </button>
+            </li>
+          </ul>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link fs-6 lh-sm fw-normal text-success" aria-current="page" href="tdee.html">TDEE計算
+                </a>
+              </li>
+              <li class="nav-item ms-md-18">
+                <a class="nav-link fs-6 lh-sm fw-normal text-success" href="article.html">瘦身好文</a>
+              </li>
+              <li class="nav-item ms-md-18">
+                <a class="nav-link fs-6 lh-sm fw-normal text-success" href="cookbook.html">瘦身食譜</a>
+              </li>
+              <li class="nav-item ms-md-18">
+                <a class="nav-link fs-6 lh-sm fw-normal text-success" href="lunchbox.html">瘦身餐盒</a>
+              </li>
+              <li class="nav-item ms-md-18">
+                <a class="nav-link fs-6 lh-sm fw-normal text-success" href="login.html">會員登入</a>
+              </li>
+              <li class="nav-item d-md-block d-none ms-md-17">
+                <a class="nav-link" href="collect.html">
+                  <span class="material-icons w-24 h-24 text-primary">
+                    favorite
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item d-md-block d-none ms-md-16">
+                <a class="nav-link" href="cart.html">
+                  <span class="material-icons w-24 h-24 text-primary">
+                    shopping_cart
+                  </span>
+                </a>
+              </li> 
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+<section>
+  <div class="container py-13">
+    <div class="row">
+      <div class="col-md-6 col-0" data-aos="fade-right">
+        <div class="registerImg rounded-24"></div>
+      </div>
+      <div class="col-md-6 col-12 d-flex align-items-center justify-content-center flex-column" data-aos="fade-up">
+        <h2 class="fs-48 lh-56 text-primary fw-bolder mb-4">會員註冊</h2>
+        <form action="" method="post" class="loginForm">
+          <div class="row mb-1">
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label class="fs-4 lh-60 fw-normal w-100" for="text">真實姓名</label>
+                <input class="fs-4 lh-60 fw-normal rounded-8 border-1 w-100" type="text" id="text" placeholder="請輸入姓名">
+                <p class="check" data-title="姓名"></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label class="fs-4 lh-60 fw-normal w-100" for="text">暱稱</label>
+                <input class="fs-4 lh-60 fw-normal rounded-8 border-1 w-100" type="text" id="text" placeholder="請輸入暱稱">
+                <p class="check" data-title="暱稱"></p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-1">
+            <label class="fs-4 lh-60 fw-normal w-100" for="text">Email</label>
+            <input class="fs-4 lh-60 fw-normal rounded-8 border-1 w-100" type="text" id="text" placeholder="請輸入帳號">
+            <p class="check" data-title="帳號"></p>
+          </div>
+          <div class="form-group mb-2">
+            <label class="fs-4 lh-60 fw-normal w-100" for="password">密碼</label>
+            <input class="fs-4 lh-60 fw-normal rounded-8 border-1 w-100" type="password" id="password" placeholder="請輸入密碼">
+            <p class="check" data-title="密碼"></p>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              訂閱電子報不漏接任何最新消息
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              已詳細閱讀使用條款和隱私權政策
+            </label>
+          </div>
+          <a class="loginBtn fs-4 lh-36 bg-primary text-white w-100 py-4 text-center rounded-8 mb-4" href="#">註冊</a>
+          <div class="d-flex justify-content-between">
+            <a class="text-secondary" href="login.html">登入</a>
+            <a class="text-secondary" href="reset.html">忘記密碼</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="bg-info">
+      <div class="container-lg">
+        <ul class="d-flex flex-lg-row justify-content-lg-between flex-column align-items-center">
+          <li data-aos="fade-up">
+            <ul class="d-flex flex-column justify-content-between  align-items-center py-24">
+              <li class="mb-6">
+                <a class="fs-6 lh-sm text-primary fw-normal" href="tdee.html">
+                  TDEE計算
+                </a>
+              </li>
+              <li class="mb-6">
+                <a class="fs-6 lh-sm text-primary fw-normal" href="article.html">
+                  瘦身好文
+                </a>
+              </li>
+              <li class="mb-6">
+                <a class="fs-6 lh-sm text-primary fw-normal" href="cookbook.html">
+                  瘦身食譜
+                </a>
+              </li>
+              <li class="mb-6">
+                <a class="fs-6 lh-sm text-primary fw-normal" href="lunchbox.html">
+                  瘦身餐盒
+                </a>
+              </li>
+              <li>
+                <a class="fs-6 lh-sm text-primary fw-normal" href="Information.html">
+                  付款及運送資訊
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="d-flex flex-column align-items-center my-lg-0 my-3">
+            <img class="d-md-none d-block" src="./assets/images/divider.png" alt="divider" data-aos="fade-right">
+            <a class="navbar-brand fs-4 lh-36 fw-bolder text-primary py-6 my-3" href="index.html" data-aos="fade-up">
+              感瘦
+            </a>
+            <p class="fs-6 lh-sm text-primary  mb-6 fw-normal" data-aos="fade-up">© 2022 COPYRIGHT</p>
+            <p class="fs-6 lh-sm text-primary  mb-6 fw-normal" data-aos="fade-up">本網站圖片與文案僅供個人作品使用，非商業用途</p>
+            <img class="d-md-none d-block" src="./assets/images/divider.png" alt="divider" data-aos="fade-left">
+          </li>
+          <li class="py-13 d-flex flex-column align-items-center" data-aos="fade-up">
+            <p class="fs-6 lh-sm text-primary mb-6 fw-normal">會員登入</p>
+            <ul class="mb-6 d-flex">
+              <li>
+                <a href="https://zh-tw.facebook.com/">
+                  <img class="w-16 h-24" src="./assets/images/meta 1.png" alt="meta">
+                </a>
+              </li>
+              <li class="mx-6">
+                <a href="https://www.instagram.com/">
+                  <img class="w-24 h-24" src="./assets/images/instagram 1.png" alt="instagram">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/JHOUJHOU/feelthin_project">
+                  <img class="w-24 h-24" src="./assets/images/github 1.png" alt="github">
+                </a>
+              </li>
+            </ul>
+            <p class="fs-6 lh-sm text-primary mb-6 fw-normal">電話：0912345678</p>
+            <p class="fs-6 lh-sm text-primary fw-normal">信箱：feeltothin@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

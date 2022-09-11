@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -82,12 +83,12 @@
         </nav>
       </div>
     </header>
-
     
+<!-- banner -->
 <section>
   <div class="slider banner">
     <div class="container-lg pt-9 pb-21">
-      <div class="bannerText">
+      <div class="" data-aos="fade-right">
         <h1 class="fs-96 lh-96 fw-bolder text-secondary mb-md-21 mb-9">
           Diet
           <br>Fitness
@@ -103,47 +104,63 @@
   
 </section>
 
+<!-- about -->
 <section>
   <div class="container-lg text-center py-21">
-    <h2 class="fs-48 lh-56 text-primary mb-4 fw-bolder">關於我們</h2>
-    <img class="mb-4" src="./assets/images/divider.png" alt="divider">
-    <p class="fs-2 lh-60 fw-lighter">因上班長期久坐、上班已經很累下班根本不想動只想躺，又加上沒有運動習慣、飲食上沒有控制的人等原因體重已失控的狀況，所以感瘦想提供有同樣情況的人一個方向，能協助解決肥胖問題。</p>
+    <h2 data-aos="fade-up" class="fs-48 lh-56 text-primary mb-4 fw-bolder">關於我們</h2>
+    <img data-aos="fade-up" class="mb-4" src="./assets/images/divider.png" alt="divider">
+    <p data-aos="fade-up" class="fs-2 lh-60 fw-lighter">因上班長期久坐、上班已經很累下班根本不想動只想躺，又加上沒有運動習慣、飲食上沒有控制的人等原因體重已失控的狀況，所以感瘦想提供有同樣情況的人一個方向，能協助解決肥胖問題。</p>
   </div>
 </section>
 
+<!-- content -->
 <section>
   <div class="container-lg py-md-21 mb-29">
     <div class="row mb-18">
-      <div class="col-lg-6 col-12">
-        <div class="position-relative mb-md-0 mb-7">
-          <div class="box-1">
+      <div class="col-lg-6 col-12" >
+        <div class="mb-md-0 mb-7">
+          <div class="circle">
             <div class="tdeeImg text-hidden">tdeeImg</div>
+            <svg height="0" width="0" class="svg-clip">
+              <defs>
+                  <clipPath id="hero-clip" clipPathUnits="objectBoundingBox">
+                    <polygon fill="none" points="0,0 1,0 1,.8 .5,1 0,.8 "/>
+                  </clipPath>
+              </defs>
+            </svg>
           </div>
         </div>
       </div>
       <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
-        <p class="fs-2 lh-60 mb-md-7 mb-10 fw-lighter">從了解自己所需每日熱量開始，你<br>要先知道甚麼是TDEE</p>
-          <button class="btn btn-secondary  py-6 px-16 fs-4 lh-56 text-white rounded-8 fw-500" type="button">TDEE計算</button>
+        <p data-aos="fade-left" class="fs-2 lh-60 mb-md-7 mb-10 fw-lighter">從了解自己所需每日熱量開始，你<br>要先知道甚麼是TDEE</p>
+        <button data-aos="fade-left" class="btn btn-secondary  py-6 px-16 fs-4 lh-56 text-white rounded-8 fw-500" type="button">TDEE計算</button>
       </div>
     </div>
     <div class="row d-flex flex-md-row flex-column-reverse">
       <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center mb-md-0 mb-7 ">
-        <p class="fs-2 lh-60 mb-md-7 mb-10 fw-lighter">多樣豐富各種文章，讓您找到您<br>適合的減重方法及所有的知識。</p>
-        <button class="btn btn-secondary  py-6 px-16 fs-4 lh-56 text-white rounded-8 fw-500" type="button">瘦身好文</button>
+        <p data-aos="fade-right" class="fs-2 lh-60 mb-md-7 mb-10 fw-lighter">多樣豐富各種文章，讓您找到您<br>適合的減重方法及所有的知識。</p>
+        <button data-aos="fade-right" class="btn btn-secondary  py-6 px-16 fs-4 lh-56 text-white rounded-8 fw-500" type="button">瘦身好文</button>
       </div>
       <div class="col-lg-6 col-12">
-        <div class="position-relative">
-          <div class="box-1">
-            <div class="articleImg text-hidden">tdeeImg</div>
-          </div>
+        <div class="circle">
+          <div class="articleImg text-hidden">articleImg</div>
+          <svg height="0" width="0" class="svg-clip">
+            <defs>
+                <clipPath id="hero-clip" clipPathUnits="objectBoundingBox">
+                  <polygon fill="none" points="0,0 1,0 1,.8 .5,1 0,.8 "/>
+                </clipPath>
+            </defs>
+          </svg>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- recipe -->
 <section>
-  <div class="py-21 recipe px-md-0 px-6 position-relative">
+  <div class="py-21 recipe  px-md-0 px-6 position-relative">
+
     <div class="container-lg">
       <div class="row bg-white pt-11 pb-13 d-flex flex-md-row flex-column-reverse">
         <div class="col-md-4 col-12 d-flex flex-column justify-content-center align-items-center mt-lg-0 mt-21">
@@ -185,56 +202,57 @@
   </div>
 </section>
 
+<!-- product -->
 <section>
   <div class="container-lg py-21">
-    <h2 class="fs-1 lh-60 text-primary mb-4 text-md-start text-center fw-bolder">
+    <h2 data-aos="fade-right" class="fs-1 lh-60 text-primary mb-4 text-md-start text-center fw-bolder">
       沒有時間自己料理，提供多樣健康的瘦身餐盒
     </h2>
-    <p class="fs-1 lh-60 text-primary mb-4 text-md-end text-center fw-bolder">好吃又美味，開心的瘦下來</p>
-    <div class="text-center mb-9">
+    <p data-aos="fade-left" class="fs-1 lh-60 text-primary mb-4 text-md-end text-center fw-bolder">好吃又美味，開心的瘦下來</p>
+    <div class="text-center mb-9" data-aos="fade-up">
       <img src="./assets/images/divider.png" alt="divider">
     </div>
     <div class="row mb-18">
-      <div class="col-md-4 col-12 mb-md-0 mb-6">
-        <div class="card border-0">
+      <div class="col-md-4 col-12 mb-md-0 mb-6" data-aos="fade-up">
+        <div class="card border-0" >
           <div class="chickenbox text-hidden">chickenbox</div>
-          <div class="card-body px-0 py-0">
+          <div class="card-body px-0 py-0" >
             <div class="py-4 px-4">
               <div class="d-flex justify-content-between align-items-center">
-                <h4 class="card-title fs-4 lh-36 fw-bolder">雞肉蔬菜輕食</h4>
-                <p class="fs-4 lh-36 text-primary fw-bolder">NT 1000</p>
+                <h4 class="card-title fs-4 lh-36 fw-bolder" data-aos="fade-up">雞肉蔬菜輕食</h4>
+                <p class="fs-4 lh-36 text-primary fw-bolder" data-aos="fade-up">NT 1000</p>
               </div>
-              <p class="card-text fs-5 lh-lg fw-normal">多種蔬菜水果，搭配經過舒肥過的雞胸肉，豐富膳食纖維並補充足夠蛋白質及澱粉，好吃營養無負擔。</p>
+              <p class="card-text fs-5 lh-lg fw-normal" data-aos="fade-up">多種蔬菜水果，搭配經過舒肥過的雞胸肉，豐富膳食纖維並補充足夠蛋白質及澱粉，好吃營養無負擔。</p>
             </div>
             <button class="btn btn-secondary text-white w-100 rounded-8  fs-4 lh-sm py-4 fw-500" type="button">加入購物車</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-12 mb-md-0 mb-6">
+      <div class="col-md-4 col-12 mb-md-0 mb-6" data-aos="fade-up">
         <div class="card border-0">
           <div class="kimchibox text-hidden">kimchibox</div>
           <div class="card-body px-0 py-0">
             <div class="py-4 px-4">
               <div class="d-flex justify-content-between align-items-center">
-                <h4 class="card-title fs-4 lh-36 fw-bolder">泡菜蔬食沙拉</h4>
-                <p class="fs-4 lh-36 text-primary fw-bolder">NT 1000</p>
+                <h4 class="card-title fs-4 lh-36 fw-bolder" data-aos="fade-up">泡菜蔬食沙拉</h4>
+                <p class="fs-4 lh-36 text-primary fw-bolder" data-aos="fade-up">NT 1000</p>
               </div>
-              <p class="card-text fs-5 lh-lg fw-normal">泡菜內有大蒜和辣椒，偶爾吃能促進新陳代謝和纖維質，吃蔬菜同時也能吃到澱粉，讓吃起來不罪惡。</p>
+              <p class="card-text fs-5 lh-lg fw-normal" data-aos="fade-up">泡菜內有大蒜和辣椒，偶爾吃能促進新陳代謝和纖維質，吃蔬菜同時也能吃到澱粉，讓吃起來不罪惡。</p>
             </div>
             <button class="btn btn-secondary text-white w-100 rounded-8  fs-4 lh-sm py-4 fw-500" type="button">加入購物車</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-12">
+      <div class="col-md-4 col-12" data-aos="fade-up">
         <div class="card border-0">
           <div class="porkbox text-hidden">porkbox</div>
           <div class="card-body px-0 py-0">
             <div class="py-4 px-4">
               <div class="d-flex justify-content-between align-items-center">
-                <h4 class="card-title fs-4 lh-36 fw-bolder">豬肉蔬食沙拉</h4>
-                <p class="fs-4 lh-36 text-primary fw-bolder">NT 1000</p>
+                <h4 class="card-title fs-4 lh-36 fw-bolder" data-aos="fade-up">豬肉蔬食沙拉</h4>
+                <p class="fs-4 lh-36 text-primary fw-bolder" data-aos="fade-up">NT 1000</p>
               </div>
-              <p class="card-text fs-5 lh-lg fw-normal">豬肉經過烤箱烘烤後，肉汁飽滿爆汁，搭配多種水果蔬食，在補充膳食纖維時也能吃到肉補充蛋白質，讓吃起來開心又滿足。</p>
+              <p class="card-text fs-5 lh-lg fw-normal" data-aos="fade-up">豬肉經過烤箱烘烤後，肉汁飽滿爆汁，搭配多種水果蔬食，在補充膳食纖維時也能吃到肉補充蛋白質，讓吃起來開心又滿足。</p>
             </div>
             <button class="btn btn-secondary text-white w-100 rounded-8  fs-4 lh-sm py-4 fw-500" type="button">加入購物車</button>
           </div>
@@ -242,7 +260,7 @@
       </div>
     </div>
     <div class="d-flex justify-content-center">
-      <button class="btn btn-outline-secondary rounded-8 fs-36 lh-sm py-6 px-16 fw-500" type="button">查看所有商品</button>
+      <button class="btn btn-outline-secondary rounded-8 fs-36 lh-sm py-6 px-16 fw-500" type="button" data-aos="fade-up">查看所有商品</button>
     </div>
   </div>
 </section>
@@ -251,7 +269,7 @@
     <footer class="bg-info">
       <div class="container-lg">
         <ul class="d-flex flex-lg-row justify-content-lg-between flex-column align-items-center">
-          <li>
+          <li data-aos="fade-up">
             <ul class="d-flex flex-column justify-content-between  align-items-center py-24">
               <li class="mb-6">
                 <a class="fs-6 lh-sm text-primary fw-normal" href="tdee.html">
@@ -281,13 +299,15 @@
             </ul>
           </li>
           <li class="d-flex flex-column align-items-center my-lg-0 my-3">
-            <img class="d-md-none d-block" src="./assets/images/divider.png" alt="divider">
-            <a class="navbar-brand fs-4 lh-36 fw-bolder text-primary py-6 my-3" href="index.html">
+            <img class="d-md-none d-block" src="./assets/images/divider.png" alt="divider" data-aos="fade-right">
+            <a class="navbar-brand fs-4 lh-36 fw-bolder text-primary py-6 my-3" href="index.html" data-aos="fade-up">
               感瘦
             </a>
-            <img class="d-md-none d-block" src="./assets/images/divider.png" alt="divider">
+            <p class="fs-6 lh-sm text-primary  mb-6 fw-normal" data-aos="fade-up">© 2022 COPYRIGHT</p>
+            <p class="fs-6 lh-sm text-primary  mb-6 fw-normal" data-aos="fade-up">本網站圖片與文案僅供個人作品使用，非商業用途</p>
+            <img class="d-md-none d-block" src="./assets/images/divider.png" alt="divider" data-aos="fade-left">
           </li>
-          <li class="py-13 d-flex flex-column align-items-center">
+          <li class="py-13 d-flex flex-column align-items-center" data-aos="fade-up">
             <p class="fs-6 lh-sm text-primary mb-6 fw-normal">會員登入</p>
             <ul class="mb-6 d-flex">
               <li>
@@ -301,7 +321,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://github.com/">
+                <a href="https://github.com/JHOUJHOU/feelthin_project">
                   <img class="w-24 h-24" src="./assets/images/github 1.png" alt="github">
                 </a>
               </li>
@@ -312,9 +332,10 @@
         </ul>
       </div>
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 
