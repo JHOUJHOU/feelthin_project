@@ -20516,34 +20516,18 @@ body {
   background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/recipe.jpg?raw=true") no-repeat;
   background-size: cover;
   background-position: center center;
-  position: relative;
   height: 100%;
   max-width: 100%;
   z-index: 0;
   background-attachment: fixed;
 }
 
-.recipe::after {
-  content: url("https://raw.githubusercontent.com/JHOUJHOU/feelthin_project/0692e92986709894b9b7cbae8def8e6a1ebde4ae/app/assets/images/Recipe-sm.svg");
+.recipeMiddle {
   z-index: -1;
-  background-size: cover;
-  background-position: center center;
-  position: absolute;
-  top: -90px;
-  right: 0px;
-  bottom: 0px;
-  left: 20px;
-  max-width: 100%;
 }
 
-@media (min-width: 768px) {
-  .recipe::after {
-    content: url("https://raw.githubusercontent.com/JHOUJHOU/feelthin_project/0692e92986709894b9b7cbae8def8e6a1ebde4ae/app/assets/images/Recipe.svg");
-    top: -230px;
-    right: 0px;
-    bottom: 0px;
-    left: 120px;
-  }
+.recipeTop {
+  z-index: 2;
 }
 
 .avocadoSaladImg {
@@ -20669,6 +20653,54 @@ body {
   width: 100%;
   opacity: 0.75;
   background: white;
+}
+
+.state {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/nostate.png?raw=true") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 250px;
+  width: 100%;
+}
+
+.lowstate {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/lowstate.png?raw=true") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 250px;
+  width: 100%;
+}
+
+.middlestate {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/middlestate.png?raw=true") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 250px;
+  width: 100%;
+}
+
+.lightstate {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/lightstate.png?raw=true") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 250px;
+  width: 100%;
+}
+
+.hightstate {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/hightstate.png?raw=true") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 250px;
+  width: 100%;
+}
+
+.fiercestate {
+  background: url("https://github.com/JHOUJHOU/feelthin_project/blob/master/app/assets/images/fiercestate.png?raw=true") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 250px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=all.css.map */
