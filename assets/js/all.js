@@ -48,15 +48,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 40
     }
   }
-});
-var loginBtn = document.querySelector(".loginBtn");
-var check = document.querySelectorAll("[data-title]");
-loginBtn.addEventListener("click", function (e) {
-  e.preventDefault();
-  check.forEach(function (item) {
-    item.textContent = "\u5FC5\u586B!";
-  });
-}); // tdee
+}); // tdee start
 
 var bmrState = document.querySelector(".bmrState");
 var countBtn = document.querySelector(".countBtn");
@@ -86,7 +78,17 @@ function bmrStatesText() {
   ;
 }
 
-;
+; // tdee end
+// login
+
+var loginBtn = document.querySelector(".loginBtn");
+var check = document.querySelectorAll("[data-title]");
+loginBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  check.forEach(function (item) {
+    item.textContent = "\u5FC5\u586B!";
+  });
+});
 "use strict";
 
 var bmrState = document.querySelector(".bmrState");
