@@ -23,7 +23,7 @@ AOS.init({
   // offset (in px) from the original trigger point
   delay: 0,
   // values from 0 to 3000, with step 50ms
-  duration: 600,
+  duration: 800,
   // values from 0 to 3000, with step 50ms
   easing: 'ease',
   // default easing for AOS animations
@@ -52,10 +52,70 @@ var swiper = new Swiper(".mySwiper", {
 var loginBtn = document.querySelector(".loginBtn");
 var check = document.querySelectorAll("[data-title]");
 loginBtn.addEventListener("click", function (e) {
+  e.preventDefault();
   check.forEach(function (item) {
-    if (item) {}
-
     item.textContent = "\u5FC5\u586B!";
   });
+}); // tdee
+
+var bmrState = document.querySelector(".bmrState");
+var countBtn = document.querySelector(".countBtn");
+countBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  bmrStatesText();
 });
+
+function bmrStatesText() {
+  var bmrCount;
+  var gender = document.querySelector('input:checked').value;
+  var height = document.querySelector(".height").value;
+  var weight = document.querySelector(".weight").value;
+  var age = document.querySelector(".age").value;
+  console.log(gender);
+
+  if (height == "" || weight == "" || age == "") {
+    bmrState.innerHTML = "\u8F38\u5165\u932F\u8AA4\uFF0C\u8ACB\u91CD\u65B0\u8F38\u5165!!!";
+  } else if (gender == "male") {
+    bmrCount = (10 * weight + 6.25 * height - 5 * age + 5).toFixed(2);
+    bmrState.innerHTML = "\u57FA\u790E\u4EE3\u8B1D\u7387 BMR \u7D50\u679C : ".concat(bmrCount, " \u5927\u5361");
+  } else {
+    bmrCount = (10 * weight + 6.25 * height - 5 * age - 161).toFixed(2);
+    bmrState.innerHTML = "\u57FA\u790E\u4EE3\u8B1D\u7387 BMR \u7D50\u679C : ".concat(bmrCount, " \u5927\u5361");
+  }
+
+  ;
+}
+
+;
+"use strict";
+
+var bmrState = document.querySelector(".bmrState");
+var countBtn = document.querySelector(".countBtn");
+countBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  bmrStatesText();
+});
+
+function bmrStatesText() {
+  var bmrCount;
+  var gender = document.querySelector('input:checked').value;
+  var height = document.querySelector(".height").value;
+  var weight = document.querySelector(".weight").value;
+  var age = document.querySelector(".age").value;
+  console.log(gender);
+
+  if (height == "" || weight == "" || age == "") {
+    bmrState.innerHTML = "\u8F38\u5165\u932F\u8AA4\uFF0C\u8ACB\u91CD\u65B0\u8F38\u5165!!!";
+  } else if (gender == "male") {
+    bmrCount = (10 * weight + 6.25 * height - 5 * age + 5).toFixed(2);
+    bmrState.innerHTML = "\u57FA\u790E\u4EE3\u8B1D\u7387 BMR \u7D50\u679C : ".concat(bmrCount, " \u5927\u5361");
+  } else {
+    bmrCount = (10 * weight + 6.25 * height - 5 * age - 161).toFixed(2);
+    bmrState.innerHTML = "\u57FA\u790E\u4EE3\u8B1D\u7387 BMR \u7D50\u679C : ".concat(bmrCount, " \u5927\u5361");
+  }
+
+  ;
+}
+
+;
 //# sourceMappingURL=all.js.map
