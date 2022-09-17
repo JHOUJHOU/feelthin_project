@@ -12,7 +12,7 @@ AOS.init({
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 120, // offset (in px) from the original trigger point
   delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 600, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
   once: true, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
@@ -40,11 +40,36 @@ const loginBtn = document.querySelector(".loginBtn");
 const check = document.querySelectorAll("[data-title]");
 
 loginBtn.addEventListener("click",function(e){
+    e.preventDefault();
     check.forEach(function(item){
-        if(item){
-          
-        }
         item.textContent = `必填!`;
     })
 });
 
+
+// tdee
+let bmrState = document.querySelector(".bmrState");
+const countBtn = document.querySelector(".countBtn");
+
+countBtn.addEventListener("click",function(e) {
+  e.preventDefault();
+  bmrStatesText();
+});
+
+function bmrStatesText() {
+  let bmrCount;
+  let gender = document.querySelector('input:checked').value;
+  const height = document.querySelector(".height").value;
+  const weight = document.querySelector(".weight").value;
+  const age = document.querySelector(".age").value;
+  console.log(gender);
+  if ( height == "" ||  weight == "" || age == "" ) {
+        bmrState.innerHTML = `輸入錯誤，請重新輸入!!!`;
+  } else if ( gender == "male") {
+       bmrCount = ((10 * weight) + ( 6.25 * height) - (5 * age) + 5 ).toFixed(2);
+      bmrState.innerHTML = `基礎代謝率 BMR 結果 : ${bmrCount} 大卡`; 
+  } else {
+       bmrCount = ((10 * weight) + ( 6.25 * height) - (5 * age) - 161 ).toFixed(2);
+      bmrState.innerHTML = `基礎代謝率 BMR 結果 : ${bmrCount} 大卡`;
+    };   
+};
