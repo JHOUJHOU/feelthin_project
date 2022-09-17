@@ -36,18 +36,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-const loginBtn = document.querySelector(".loginBtn");
-const check = document.querySelectorAll("[data-title]");
-
-loginBtn.addEventListener("click",function(e){
-    e.preventDefault();
-    check.forEach(function(item){
-        item.textContent = `必填!`;
-    })
-});
-
-
-// tdee
+// tdee start
 let bmrState = document.querySelector(".bmrState");
 const countBtn = document.querySelector(".countBtn");
 
@@ -73,3 +62,15 @@ function bmrStatesText() {
       bmrState.innerHTML = `基礎代謝率 BMR 結果 : ${bmrCount} 大卡`;
     };   
 };
+// tdee end
+
+// login
+const loginBtn = document.querySelector(".loginBtn");
+const check = document.querySelectorAll("[data-title]");
+
+loginBtn.addEventListener("click",function(e){
+    e.preventDefault();
+    check.forEach(function(item){
+        item.textContent = `必填!`;
+    })
+});
